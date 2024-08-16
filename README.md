@@ -39,10 +39,14 @@ fsck
 mount -w /
 mkdir /mnt
 mount -t cd9660 /dev/sd0a /mnt
-cp /mnt/*.config /private/Devices
+cd /mnt
+./install.command
+cd ..
 umount /mnt
 rmdir /mnt
 ```
+
+Restart and continue with installation.
 
 
 
@@ -60,6 +64,6 @@ The following file list is created to be referenced by web search engines:
 
 <!-- Links -->
 
-[driver CD image]: ./drivers.iso
+[driver CD image]: ./vm-drivers.iso
 [Michael Richmond's blog]: https://michaelrichmond.net/blog/2007/06/09/rhapsody-dr2/
 [Web Archive]: https://web.archive.org/web/20240520081728/https://michaelrichmond.net/blog/2007/06/09/rhapsody-dr2/
